@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEMBOS — Katalog Produk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+
+<nav id="nav">
+    <div class="nav-in">
+        <div class="logo"><span class="logo-d">D</span>eMbos</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nl">Home</a></li>
+            <li><a href="katalog.html" class="nl on">Katalog</a></li>
+            <li><a href="tentang.html" class="nl">Tentang</a></li>
+            <li><a href="kontak.html" class="nl">Kontak</a></li>
+        </ul>
+        <a href="https://wa.me/6285117128067" target="_blank" class="nav-btn">Pesan Custom</a>
+        <button class="ham" id="ham"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<div class="mob" id="mob">
+    <ul>
+        <li><a href="index.html" class="mob-l">Home</a></li>
+        <li><a href="katalog.html" class="mob-l">Katalog</a></li>
+        <li><a href="tentang.html" class="mob-l">Tentang</a></li>
+        <li><a href="kontak.html" class="mob-l">Kontak</a></li>
+    </ul>
+</div>
+
+<div style="padding-top: 5px;"></div>
+
+<section class="catalog" id="catalog">
+    <div class="sh-flex" data-r>
+        <div>
+            <span class="sec-lbl"> Katalog Produk</span>
+            <h2 class="sec-t">Temukan Gaya<br>Versi Terbaikmu</h2>
+            <p class="sec-d">Produk custom berkualitas untuk organisasi, komunitas, dan ekspresi dirimu. Pilihan warna lengkap, desain bebas.</p>
+        </div>
+        <div class="fbar">
+            <button class="fb on" data-f="all">Semua</button>
+            <button class="fb" data-f="kemeja">Kemeja</button>
+            <button class="fb" data-f="kaos">Kaos</button>
+            <button class="fb" data-f="outer">Outer</button>
+            <button class="fb" data-f="drinkware">Drinkware</button>
+            <button class="fb" data-f="bag">Tas & Aksesoris</button>
+        </div>
+    </div>
+
+    <div class="pgrid" id="pgrid">
+        <div class="pc" data-cat="kemeja" data-r>
+            <div class="cv" style="background:#E8F0F8;">
+                <div class="pm">
+                    <img src="kemeja organisasi.jpeg" alt="Kemeja Organisasi" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">KEMEJA ORG</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="kemeja-org">Lihat Detail →</button></div>
+                <div class="cbadge bhot">🔥 HOT</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kemeja</div>
+                <h3 class="cname">Kemeja Organisasi</h3>
+                <p class="ctag">Identitas kelompokmu, tampil seragam tapi tetap stylish.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 145.000</span>
+                    <button class="boc" data-p="Kemeja Organisasi">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kaos" data-r>
+            <div class="cv" style="background:#F0EBF8;">
+                <div class="pm">
+                    <img src="ini.jpeg" alt="Kaos Polo" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">POLO</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="polo">Lihat Detail →</button></div>
+                <div class="cbadge bnew">NEW</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kaos</div>
+                <h3 class="cname">Kaos Polo</h3>
+                <p class="ctag">Smart casual, cocok untuk acara formal maupun santai.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 85.000</span>
+                    <button class="boc" data-p="Kaos Polo">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc feat" data-cat="outer" data-r>
+            <div class="cv" style="background:#EAEDE8;">
+                <div class="pm">
+                    <img src="sweater.jpeg" alt="Sweater" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">JAKET / SWEATER</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="jaket">Lihat Detail →</button></div>
+                <div class="cbadge bcust">CUSTOM</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Outer</div>
+                <h3 class="cname">Jaket / Sweater</h3>
+                <p class="ctag">Cozy, bold, dan ada pilihan warna untuk semua selera.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 150.000</span>
+                    <button class="boc" data-p="Jaket / Sweater">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="drinkware" data-r>
+            <div class="cv" style="background:#E8F4FB;">
+                <div class="pm">
+                    <img src="gatau.jpeg" alt="Tumblr uv" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="co"><button class="bvd" data-p="tumblr-uv">Lihat Detail →</button></div>
+                <div class="cbadge bnew">NEW</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Drinkware</div>
+                <h3 class="cname">Tumblr UV Print</h3>
+                <p class="ctag">Print UV full-color langsung ke badan tumblr.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 55.000</span>
+                    <button class="boc" data-p="Tumblr UV Print">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="bag" data-r>
+            <div class="cv" style="background:#FDF3E0;">
+                <div class="pm">
+                    <img src="tote bag.jpeg" alt="Tote Bag" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="co"><button class="bvd" data-p="goodie-bag">Lihat Detail →</button></div>
+                <div class="cbadge bcust">CUSTOM</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Tas & Aksesoris</div>
+                <h3 class="cname">TOTE BAG AESTHETIC</h3>
+                <p class="ctag">Tersedia 3 bentuk: jinjing, drawstring, dan paper bag.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 18.000</span>
+                    <button class="boc" data-p="BAG AESTHETIC">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kaos" data-r>
+            <div class="cv" style="background:#F0F0F8;">
+                <div class="pm">
+                    <img src="gatauuu.jpeg" alt="Jersey" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="co"><button class="bvd" data-p="mug-jersey">Lihat Detail →</button></div>
+                <div class="cbadge bhot">🔥 HOT</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kaos</div>
+                <h3 class="cname">Jersey Bola</h3>
+                <p class="ctag">Bahan premium dengan desain jersey kebanggaanmu.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 70.000</span>
+                    <button class="boc" data-p="Jersey Bola">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kaos" data-r>
+            <div class="cv" style="background:#E8F8EE;">
+                <div class="pm">
+                    <img src="setelan baju olahraga.jpeg" alt="Baju Olahraga" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">OLAHRAGA</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="olahraga">Lihat Detail →</button></div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kaos</div>
+                <h3 class="cname">Baju Olahraga</h3>
+                <p class="ctag">Dry-fit ringan, gerak bebas, desain tim keren.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 68.000</span>
+                    <button class="boc" data-p="Baju Olahraga">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kemeja" data-r>
+            <div class="cv" style="background:#FBF0E8;">
+                <div class="pm">
+                    <img src="dreamina-2026-05-06-3994-Product photography of an army green lon....jpeg" alt="Kemeja Bordir" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="co"><button class="bvd" data-p="kemeja-bordir">Lihat Detail →</button></div>
+                <div class="cbadge bcust">BORDIR</div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kemeja</div>
+                <h3 class="cname">Kemeja Bordir</h3>
+                <p class="ctag">Bordir presisi tinggi, kesan elegan setiap acara.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 115.000</span>
+                    <button class="boc" data-p="Kemeja Bordir">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kaos" data-r>
+            <div class="cv" style="background:#F2EEF8;">
+                <div class="pm">
+                    <img src="kaos panjang putih.jpeg" alt="Kaos Panjang" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">LENGAN PANJANG</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="kaos-panjang">Lihat Detail →</button></div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kaos</div>
+                <h3 class="cname">Kaos Lengan Panjang</h3>
+                <p class="ctag">Sablon premium, nyaman dipakai sepanjang hari.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 45.000</span>
+                    <button class="boc" data-p="Kaos Lengan Panjang">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="kaos" data-r>
+            <div class="cv" style="background:#F8F0EC;">
+                <div class="pm">
+                    <img src="kaos pendek putih.jpeg" alt="Kaos Pendek" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">LENGAN PENDEK</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="kaos-pendek">Lihat Detail →</button></div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Kaos</div>
+                <h3 class="cname">Kaos Lengan Pendek</h3>
+                <p class="ctag">Pilihan warna terlengkap, sablon DTF/Screen.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 35.000</span>
+                    <button class="boc" data-p="Kaos Lengan Pendek">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="bag" data-r>
+            <div class="cv" style="background:#FDFAF3;">
+                <div class="pm">
+                    <img src="tas custom.jpeg" alt="Tas Custom" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="co"><button class="bvd" data-p="tote">Lihat Detail →</button></div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Tas & Aksesoris</div>
+                <h3 class="cname">Bag Aesthetic</h3>
+                <p class="ctag">Kanvas tebal, cocok untuk ngampus dan hangout.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 55.000</span>
+                    <button class="boc" data-p="Tote Bag Aesthetic">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pc" data-cat="drinkware" data-r>
+            <div class="cv" style="background:#F0F5EC;">
+                <div class="pm">
+                    <img src="mug.jpeg" alt="Mug" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="ml">MUG</div>
+                </div>
+                <div class="co"><button class="bvd" data-p="mug">Lihat Detail →</button></div>
+            </div>
+            <div class="ci">
+                <div class="ccat">Drinkware</div>
+                <h3 class="cname">Mug Eksklusif</h3>
+                <p class="ctag">Keramik sublimasi kualitas premium, warna vivid.</p>
+                <div class="cf">
+                    <span class="cpr">Mulai Rp 65.000</span>
+                    <button class="boc" data-p="Mug Eksklusif">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mo" id="mo">
+    <div class="mb">
+        <button class="mcl" id="mcl">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div id="mcon"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="fl"><em>D</em>eMbos</div>
+    <p class="fc">© 2022 Dembos Studio · Wear Your Identity</p>
+    <div id="cartFloatBtn" class="cart-float-btn">
+    🛒
+    <span id="cartCount" class="cart-count">0</span>
+    </div>
+    
+    <div class="socials">
+        <a href="https://www.instagram.com/dembos.id/" target="_blank" class="soc-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Instagram
+        </a>
+    </div>
+</footer>
+
+<script>
+// Database Modal Produk (Sudah disesuaikan harganya)
+const pd = {
+    'kemeja-org': { n:'Kemeja Organisasi', pr:'Mulai Rp 145.000', d:'Kemeja custom untuk organisasi, komunitas, atau kepanitiaan. Bahan katun poplin adem, sablon/bordir tersedia.' },
+    'polo': { n:'Kaos Polo', pr:'Mulai Rp 85.000', d:'Kaos polo smart casual bahan lacoste pique berkualitas. Tersedia S–XXL, 12+ pilihan warna.' },
+    'jaket': { n:'Jaket / Sweater', pr:'Mulai Rp 150.000', d:'Jaket fleece atau sweater crewneck tebal dengan sablon custom. Pilihan warna 16+ varian.' },
+    'tumblr-uv': { n:'Tumblr UV Print', pr:'Mulai Rp 55.000', d:'Tumblr stainless steel dengan print UV full-color. Resolusi tinggi, tahan gores. Kapasitas 500ml.' },
+    'goodie-bag': { n:'BAG AESTHETIC', pr:'Mulai Rp 18.000', d:'Tersedia jinjing, drawstring, dan paper bag. Full sablon warna, cocok untuk souvenir event.' },
+    'mug-jersey': { n:'Jersey Bola', pr:'Mulai Rp 70.000', d:'Jersey bola premium. Bahan dry-fit, sublimasi full-color, awet dan nyaman.' },
+    'olahraga': { n:'Baju Olahraga', pr:'Mulai Rp 68.000', d:'Jersey olahraga bahan dry-fit ringan dan breathable. Cocok untuk tim futsal, basket, voli.' },
+    'kemeja-bordir': { n:'Kemeja Bordir', pr:'Mulai Rp 115.000', d:'Kemeja premium dengan bordir komputer presisi tinggi. Cocok untuk seragam formal kantor.' },
+    'kaos-panjang': { n:'Kaos Lengan Panjang', pr:'Mulai Rp 45.000', d:'Bahan 30s cotton combed premium. Sablon DTF atau screen printing, 14+ pilihan warna.' },
+    'kaos-pendek': { n:'Kaos Lengan Pendek', pr:'Mulai Rp 35.000', d:'Bahan 24s/30s cotton combed, pilihan warna terlengkap (20+ warna).' },
+    'tote': { n:'Tote Bag Aesthetic', pr:'Mulai Rp 55.000', d:'Kanvas tebal 12oz dengan sablon custom. Handle kuat, ukuran A4+. Cocok ngampus.' },
+    'mug': { n:'Mug Eksklusif', pr:'Mulai Rp 65.000', d:'Mug keramik putih sublimasi premium. Warna vivid, gambar tahan lama tidak mudah pudar.' }
+};
+
+// Logic Cursor
+const cur = document.getElementById('cur');
+document.addEventListener('mousemove', e => { cur.style.left = e.clientX+'px'; cur.style.top = e.clientY+'px'; });
+
+// Scroll Navbar
+window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('sc', scrollY > 30));
+
+// Mobile Menu
+const ham = document.getElementById('ham'), mob = document.getElementById('mob');
+ham.addEventListener('click', () => { ham.classList.toggle('on'); mob.classList.toggle('on'); });
+
+// Filtering Kategori
+document.querySelectorAll('.fb').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
+        btn.classList.add('on');
+        const f = btn.dataset.f;
+        document.querySelectorAll('.pc').forEach(c => c.classList.toggle('hide', f !== 'all' && c.dataset.cat !== f));
+    });
+});
+
+// Logic Modal
+const mo = document.getElementById('mo'), mcon = document.getElementById('mcon');
+document.querySelectorAll('.bvd').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const p = pd[btn.dataset.p]; 
+        if (!p) return;
+        mcon.innerHTML = `
+            <p style="font-family:'Space Mono',monospace;font-size:.58rem;opacity:.38;text-transform:uppercase;margin-bottom:.5rem">Produk</p>
+            <h3 style="font-family:'Anton',sans-serif;font-size:2rem;text-transform:uppercase;line-height:1;margin-bottom:1rem">${p.n}</h3>
+            <p style="font-size:.88rem;line-height:1.75;opacity:.6;margin-bottom:1.5rem">${p.d}</p>
+            <p style="font-family:'Space Mono',monospace;font-weight:700;margin-bottom:2rem">${p.pr}</p>
+            <a href="https://wa.me/6285117128067?text=Halo+Dembos!+Saya+mau+order+${encodeURIComponent(p.n)}" target="_blank" class="btn-wa" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:#000;color:#fff;font-family:'Space Mono',monospace;font-size:.68rem;border-radius:2px">Order via WhatsApp →</a>`;
+        mo.classList.add('on');
+    });
+});
+
+document.querySelectorAll('.boc').forEach(btn => {
+    btn.addEventListener('click', () => window.open(`https://wa.me/6285117128067?text=Halo+Dembos!+Saya+mau+order+${encodeURIComponent(btn.dataset.p)}`,'_blank'));
+});
+
+document.getElementById('mcl').addEventListener('click', () => mo.classList.remove('on'));
+mo.addEventListener('click', e => { if (e.target === mo) mo.classList.remove('on'); });
+
+// Scroll Animation Observer
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+}, { threshold: .1 });
+document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+
+// ====== LOGIKA KERANJANG (SIMPAN KE LOCAL STORAGE) ======
+// Mengambil data keranjang dari localStorage (jika kosong, buat array baru)
+let cart = JSON.parse(localStorage.getItem('dembos_cart')) || [];
+const cartFloatBtn = document.getElementById('cartFloatBtn');
+const cartCount = document.getElementById('cartCount');
+
+// Update angka di badge keranjang
+function updateCartBadge() {
+    let totalItems = 0;
+    cart.forEach(item => totalItems += item.qty);
+    cartCount.innerText = totalItems;
+}
+
+// Redirect ke halaman keranjang
+cartFloatBtn.addEventListener('click', () => {
+    window.location.href = 'keranjang.html'; // Pindah ke halaman keranjang
+});
+
+// Logika untuk tombol "Order"
+document.querySelectorAll('.boc').forEach(btn => {
+    // Menghapus event listener bawaan dengan melakukan clone node
+    const newBtn = btn.cloneNode(true);
+    btn.parentNode.replaceChild(newBtn, btn);
+
+    newBtn.addEventListener('click', () => {
+        const productName = newBtn.dataset.p;
+        const existingItem = cart.find(item => item.name === productName);
+        
+        if (existingItem) {
+            existingItem.qty += 1;
+        } else {
+            cart.push({ name: productName, qty: 1 });
+        }
+        
+        // Simpan data terbaru ke localStorage
+        localStorage.setItem('dembos_cart', JSON.stringify(cart));
+        updateCartBadge();
+        
+        // Efek animasi icon saat ditambahkan
+        cartFloatBtn.style.transform = 'scale(1.2)';
+        setTimeout(() => cartFloatBtn.style.transform = 'scale(1)', 200);
+    });
+});
+
+// Panggil saat halaman pertama kali dimuat
+updateCartBadge();
+</script>
+
+</body>
+</html>

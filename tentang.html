@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEMBOS — Tentang Kami</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+
+<nav id="nav">
+  <div class="nav-in">
+    <div class="logo"><span class="logo-d">D</span>eMbos</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nl">Home</a></li>
+      <li><a href="katalog.html" class="nl">Katalog</a></li>
+      <li><a href="tentang.html" class="nl on">Tentang</a></li>
+      <li><a href="kontak.html" class="nl">Kontak</a></li>
+    </ul>
+    <a href="katalog.html" class="nav-btn">Order Sekarang</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob">
+  <ul>
+    <li><a href="index.html" class="mob-l">Home</a></li>
+    <li><a href="katalog.html" class="mob-l">Katalog</a></li>
+    <li><a href="tentang.html" class="mob-l">Tentang</a></li>
+    <li><a href="kontak.html" class="mob-l">Kontak</a></li>
+  </ul>
+</div>
+
+<!-- Spacing Navbar -->
+<div style="padding-top: 5px;"></div>
+
+<section class="why" id="about">
+  <div class="why-in" data-r>
+    <div>
+      <span class="sec-lbl">Kenapa Dembos?</span>
+      <h2 class="sec-t">Kami Ngerti<br>Bahasa Kamu</h2>
+      <p class="why-desc">Generasi kita nggak mau seragam. Kita mau ekspresif, berani, dan beda. Dembos lahir buat kamu yang capek sama desain itu-itu aja.</p>
+      <ul class="wl">
+        <li class="wli"><span class="wi">⚡</span><div><strong>Desain Full Custom</strong><p>Bawa desainmu, atau kolaborasi bareng tim kreatif kami.</p></div></li>
+        <li class="wli"><span class="wi">💎</span><div><strong>Bahan Premium</strong><p>Sablon tahan lama, bahan nggak bikin gerah.</p></div></li>
+        <li class="wli"><span class="wi">🚀</span><div><strong>Proses Cepat</strong><p>Estimasi 3–7 hari kerja. Nggak bikin nunggu lama.</p></div></li>
+        <li class="wli"><span class="wi">✦</span><div><strong>Gen Z Aesthetic</strong><p>Tiap desain dibuat sama anak muda, untuk anak muda.</p></div></li>
+      </ul>
+    </div>
+    <div class="steps">
+      <div class="sti"><span class="stn">01</span><div class="stt"><strong>Order & Brief</strong><p>Ceritain kebutuhan desainmu ke kami via WhatsApp.</p></div></div>
+      <div class="sti"><span class="stn">02</span><div class="stt"><strong>Desain & Approval</strong><p>Tim kami bikinin mockup. Kamu kasih feedback, kami revisi.</p></div></div>
+      <div class="sti"><span class="stn">03</span><div class="stt"><strong>Produksi</strong><p>Setelah approve, produk masuk jalur produksi premium.</p></div></div>
+      <div class="sti"><span class="stn">04</span><div class="stt"><strong>Kirim ke Kamu</strong><p>Dikemas rapi dan dikirim langsung ke pintumu.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class="fl"><em>D</em>eMbos</div>
+    <p class="fc">© 2022 Dembos Studio · Wear Your Identity</p>
+    
+    <div class="socials">
+        <a href="https://www.instagram.com/dembos.id/" target="_blank" class="soc-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Instagram
+        </a>
+    </div>
+</footer>
+
+<script>
+const cur = document.getElementById('cur');
+document.addEventListener('mousemove', e => { cur.style.left = e.clientX+'px'; cur.style.top = e.clientY+'px'; });
+document.querySelectorAll('a,button').forEach(el => {
+  el.addEventListener('mouseenter', () => cur.classList.add('big'));
+  el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+});
+window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('sc', scrollY > 30));
+const ham = document.getElementById('ham'), mob = document.getElementById('mob');
+ham.addEventListener('click', () => { ham.classList.toggle('on'); mob.classList.toggle('on'); });
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+}, { threshold: .1 });
+document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

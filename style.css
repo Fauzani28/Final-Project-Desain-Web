@@ -251,6 +251,7 @@ nav.sc {
 .hero-title .acc { 
     color: var(--lime);
      -webkit-text-stroke: 0; 
+   letter-spacing: 5px;
      text-shadow: 0 0 60px rgba(202,255,0,.25); }
 
 .hero-bot {
